@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    /* Puri website ke default margin ko remove kar rahe hain */
+    padding: 0;
+    /* Puri website ke default padding ko remove kar rahe hain */
+    box-sizing: border-box;
+    /* Width aur height ke andar padding aur border ko include kar rahe hain */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Puri website ka font set kar rahe hain */
+    background: #f4f6f8;
+    /* Puri website ka background color set kar rahe hain */
+}
+
+.auth-container {
+    min-height: 100vh;
+    /* Container ki minimum height puri screen ke barabar kar rahe hain */
+    display: flex;
+    /* Container ko flexbox bana rahe hain */
+    justify-content: center;
+    /* Content ko horizontally center kar rahe hain */
+    align-items: center;
+    /* Content ko vertically center kar rahe hain */
+}
+
+.auth-card {
+    width: 350px;
+    /* Login/Register card ki width 350px rakh rahe hain */
+    padding: 30px;
+    /* Card ke andar 30px ki spacing de rahe hain */
+    background: white;
+    /* Card ka background white kar rahe hain */
+    border-radius: 10px;
+    /* Card ke corners ko round kar rahe hain */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Card ke around halka shadow de rahe hain */
+}
+
+.auth-card h1 {
+    text-align: center;
+    /* Heading ko center kar rahe hain */
+    margin-bottom: 25px;
+    /* Heading ke neeche 25px ki spacing de rahe hain */
+}
+
+.auth-card input {
+    width: 100%;
+    /* Input ki width card ke 100% kar rahe hain */
+    padding: 12px;
+    /* Input ke andar 12px ki spacing de rahe hain */
+    margin-bottom: 15px;
+    /* Har input ke neeche 15px ki spacing de rahe hain */
+    border: 1px solid #ccc;
+    /* Input ke around halka border de rahe hain */
+    border-radius: 6px;
+    /* Input ke corners ko round kar rahe hain */
+    font-size: 15px;
+    /* Input ke text ka size 15px kar rahe hain */
+}
+
+.auth-card input:focus {
+    outline: none;
+    /* Input select hone par default outline remove kar rahe hain */
+    border-color: #333;
+    /* Input select hone par border ka color change kar rahe hain */
+}
+
+.auth-card button {
+    width: 100%;
+    /* Button ki width card ke 100% kar rahe hain */
+    padding: 12px;
+    /* Button ke andar 12px ki spacing de rahe hain */
+    border: none;
+    /* Button ka default border remove kar rahe hain */
+    border-radius: 6px;
+    /* Button ke corners ko round kar rahe hain */
+    background: #222;
+    /* Button ka background dark color kar rahe hain */
+    color: white;
+    /* Button ke text ka color white kar rahe hain */
+    font-size: 16px;
+    /* Button ke text ka size 16px kar rahe hain */
+    cursor: pointer;
+    /* Button par mouse le jaane par pointer cursor dikhayega */
+}
+
+.auth-card button:hover {
+    background: #444;
+    /* Button par mouse le jaane par background color change hoga */
+}
+
+.auth-link {
+    text-align: center;
+    /* Login/Register navigation text ko center kar rahe hain */
+    margin-top: 20px;
+    /* Navigation text ke upar 20px ki spacing de rahe hain */
+}
+
+.auth-link a {
+    color: #222;
+    /* Link ka text color dark kar rahe hain */
+    font-weight: bold;
+    /* Link ke text ko bold kar rahe hain */
+    text-decoration: none;
+    /* Link ki default underline remove kar rahe hain */
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+    /* Link par mouse le jaane par underline dikhayenge */
+}
+
+.navbar {
+    display: flex;
+    /* Navbar ko flexbox bana rahe hain */
+    justify-content: space-between;
+    /* Navbar ke items ke beech space distribute kar rahe hain */
+    align-items: center;
+    /* Navbar ke items ko vertically center kar rahe hain */
+    padding: 15px 30px;
+    /* Navbar ke andar vertical 15px aur horizontal 30px spacing de rahe hain */
+    background: #222;
+    /* Navbar ka background dark kar rahe hain */
+    color: white;
+    /* Navbar ke text ka color white kar rahe hain */
+}
+
+.navbar h2 {
+    margin: 0;
+    /* Navbar heading ka default margin remove kar rahe hain */
+}
+
+.navbar span {
+    margin-left: auto;
+    /* User name ko available space ke right side push kar rahe hain */
+    margin-right: 20px;
+    /* User name ke right mein 20px ki spacing de rahe hain */
+}
+
+.navbar button {
+    padding: 8px 15px;
+    /* Logout button ke andar vertical 8px aur horizontal 15px spacing de rahe hain */
+    border: none;
+    /* Logout button ka default border remove kar rahe hain */
+    border-radius: 5px;
+    /* Logout button ke corners ko round kar rahe hain */
+    cursor: pointer;
+    /* Button par mouse le jaane par pointer cursor dikhayega */
+}
+
+.home-container {
+    text-align: center;
+    /* Home page ke content ko center kar rahe hain */
+    padding-top: 80px;
+    /* Home page ke top se 80px ki spacing de rahe hain */
+}
+
+.home-container h1 {
+    margin-bottom: 15px;
+    /* Home heading ke neeche 15px ki spacing de rahe hain */
+}
