@@ -47,3 +47,129 @@ public class UserAuthApplication {
 	}
 
 }
+
+//🔥 Sabse important project flow — Interview ke liye                     
+
+
+// REGISTER                                                 
+//    ↓
+// React
+//    ↓
+// Axios
+//    ↓
+// Controller
+//    ↓
+// Service
+//    ↓
+// BCrypt
+//    ↓
+// Repository
+//    ↓
+// MySQL
+
+
+// LOGIN
+//    ↓
+// React
+//    ↓
+// Axios
+//    ↓
+// Controller
+//    ↓
+// Service
+//    ↓
+// findByEmail()
+//    ↓
+// BCrypt.matches()
+//    ↓
+// JwtUtil
+//    ↓
+// JWT
+//    ↓
+// React
+//    ↓
+// localStorage
+
+
+// PROTECTED REQUEST
+//    ↓
+// React
+//    ↓
+// Axios Request Interceptor
+//    ↓
+// Bearer JWT
+//    ↓
+// Spring Security
+//    ↓
+// JwtAuthenticationFilter
+//    ↓
+// Validate JWT
+//    ↓
+// Extract Email
+//    ↓
+// SecurityContext
+//    ↓
+// Controller
+//    ↓
+// Service / Repository
+//    ↓
+// Database
+//    ↓
+// Response
+
+
+// INVALID / EXPIRED JWT
+//    ↓
+// 401 Unauthorized
+//    ↓
+// Axios Response Interceptor
+//    ↓
+// Remove JWT
+//    ↓
+// Remove Name
+//    ↓
+// Login Page
+
+
+// LOGOUT
+//    ↓
+// Remove JWT
+//    ↓
+// Remove Name
+//    ↓
+// Login
+
+// Final Project Architecture
+
+
+            //         ┌──────────────────────┐
+            //         │       REACT          │
+            //         │                      │
+            //         │ Login                │
+            //         │ Register             │
+            //         │ Home                 │
+            //         │ Navbar               │
+            //         │ ProtectedRoute       │
+            //         └──────────┬───────────┘
+            //                    │
+            //                  Axios
+            //                    │
+            //                    ▼
+            //         ┌──────────────────────┐
+            //         │    SPRING BOOT       │
+            //         │                      │
+            //         │ Controller           │
+            //         │ Service              │
+            //         │ Repository           │
+            //         └──────────┬───────────┘
+            //                    │
+            //         ┌──────────┴──────────┐
+            //         │                     │
+            //         ▼                     ▼
+            //  Spring Security          JPA/Hibernate
+            //         │                     │
+            //         ▼                     ▼
+            //     JWT Filter              MySQL
+            //         │
+            //         ▼
+            //   SecurityContext

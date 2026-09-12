@@ -62,9 +62,15 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter { // Ye class 
             SecurityContextHolder // Current request ke Security Context ko access kar rahe hain.
                     .getContext() // Current security context nikal rahe hain.
                     .setAuthentication(authentication); // Current request ke liye user ko authenticated set kar rahe hain.
-        }
 
 
         filterChain.doFilter(request, response); // JWT check hone ke baad request ko next filter ya controller tak bhej rahe hain.
+
+                } else { // Agar JWT token invalid ya expired hai to ye block execute hoga.
+
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED); // HTTP 401 Unauthorized response client ko bhej rahe hain.
+
+            return; // Invalid token hone par request ko yahin stop kar rahe hain.
+        }
     }
 }
