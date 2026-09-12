@@ -4,6 +4,8 @@ import Login from "./pages/Login"; // Login page component import kar rahe hain.
 import Register from "./pages/Register"; // Register page component import kar rahe hain.
 import Home from "./pages/Home"; // Home page component import kar rahe hain.
 
+import { Navigate } from "react-router-dom";
+
 // ProtectedRoute import
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -15,6 +17,8 @@ function App() { // App naam ka main React functional component bana rahe hain.
     <BrowserRouter> {/* Puri application me routing enable kar rahe hain. */}
 
       <Routes> {/* Application ke saare routes yahan define karenge. */}
+
+        <Route path="/" element={<Navigate to="/login" />} />
 
         <Route path="/login" element={<Login />} /> {/* /login URL par Login component display hoga. */}
 
