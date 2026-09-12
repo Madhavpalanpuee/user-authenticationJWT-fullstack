@@ -80,7 +80,9 @@
 
 
                 configuration.setAllowedOrigins( // Kaunse frontend origins backend ko access kar sakte hain ye define kar rahe hain.
-                        List.of("https://user-authentication-jwt-fullstack.vercel.app","http://localhost:3000","http://localhost:5174") // Hamare React/Vite frontend ko backend access karne ki permission de rahe hain.  // ye jo localhost:3000 he dokar ka he yaad rakh na dokar prr chalane ke liye
+                        List.of("http://localhost:5174",// Hamare React/Vite frontend ko backend access karne ki permission de rahe hain.
+                                "http://localhost:3000", // ye jo localhost:3000 he dokar ka he yaad rakh na dokar prr chalane ke liye
+                                "https://user-authentication-jwt-fullstack.vercel.app")  
                 );
 
 
