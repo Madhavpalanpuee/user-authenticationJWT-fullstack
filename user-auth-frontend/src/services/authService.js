@@ -1,6 +1,7 @@
 import axios from "axios"; // Axios library import kar rahe hain.
 
-const API_URL = "http://localhost:8080/api/auth"; // Backend API ka base URL store kar rahe hain.
+// const API_URL = "http://localhost:8080/api/auth"; // Backend API ka base URL store kar rahe hain.
+const API_URL = "https://user-auth-backend-3lec.onrender.com/api/auth";
 
 const api = axios.create({ // Axios ka custom instance create kar rahe hain.
     baseURL: API_URL // Har request ke starting me ye base URL automatically use hoga.
