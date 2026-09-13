@@ -1,0 +1,7 @@
+{
+    "description": "React Router ke routes ko Vercel par 404 se bachane ke liye rewrite rule use kar rahe hain. ye jo description vali line he ye samjhane ke liye likhi he ",
+    "rewrites": [{
+        "source": "/(.*)",
+        "destination": "/index.html"
+    }]
+}
